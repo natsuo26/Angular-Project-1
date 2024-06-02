@@ -1,7 +1,6 @@
 import { Component, Input, Output} from '@angular/core';
 import { TaskComponent } from './task/task.component';
 import { NgFor,NgIf  } from '@angular/common';
-
 import { NewTaskComponent } from './new-task/new-task.component';
 
 @Component({
@@ -15,7 +14,9 @@ import { NewTaskComponent } from './new-task/new-task.component';
 export class TasksComponent {
   @Input({required:true}) userId!:string
   @Input({required:true}) name!:string;
+
   isAddingTask=false;
+
   tasksData=[
     {
       id: 't1',
