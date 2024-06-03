@@ -1,4 +1,4 @@
-<app-new-task *ngIf="isAddingTask===true"/>
+<app-new-task *ngIf="isAddingTask===true" (cancel)="onCancelAddTask()"/>
 
 <section id="tasks">
     <header>

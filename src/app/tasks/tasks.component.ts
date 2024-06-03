@@ -54,4 +54,8 @@ export class TasksComponent {
   onCompleteTask(id:string){
     this.tasksData=this.tasksData.filter((taskItem)=>taskItem.id!==id);
   }
+
+  onCancelAddTask(){
+    this.isAddingTask=false;
+  }
 }
